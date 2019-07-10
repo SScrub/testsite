@@ -1,52 +1,91 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link href="ws1.css" type="text/css" rel="stylesheet">
-		<link href="favicon.png" rel="shortcut icon">
-		<title>Test</title>
-	</head>
-	<body>
-    <div class=sidebar>
-	    <div class=barbox>
-		    Text1
-			</div>
-			<div class=barbox>
-				Text2
-			</div>
-			<div class=barbox>
-				Text3
-			</div>
-			<div class=barbox>
-				Text4
-			</div>
-	 	</div>
-		<div class=sidebar2>
-			<div class=barbox2>
-				Text5
-			</div>
-			<div class=barbox2>
-				Text6
-			</div>
-			<div class=barbox2>
-				Text7
-			</div>
-			<div class=barbox2>
-				Text8
-			</div>
-		</div>
-		<div class=headbox>
-			Text9
-		</div>
-		<div id=subcon>
-			<div class=subbox>
-				Text10
-			</div>
-			<div class=subbox>
-				Text11
-			</div>
-		</div>
-	</body>
-	<footer>
-		<p>Bottom text.</p>
-	</footer>
-</html>
+body {
+background-color: black;
+background-image: url("ws1back.png");
+background-position: center;
+font-family: Courier;
+font-size: 16px;
+font-weight: bold;
+min-width: 1250px;
+text-align: center;
+color: white;
+}
+.sidebar {	
+position: fixed;
+left: 5px;
+height: auto;
+float: left;
+margin: 0px;
+z-index: 2;
+}
+.sidebar2 {	
+position: fixed;
+right: 5px;
+height: auto;
+float: right;
+margin: 0px;
+z-index: 2;
+}
+.headbox {
+background-color: black;
+background-image: url("ws1box.png");
+background-repeat: no-repeat;
+background-position: center center;
+border-style: solid;
+border-color: white;
+border-width: 1px;
+width: 910px;
+height: 1110px;
+margin: auto;
+color: white;
+}
+#subcon {
+z-index: 1;
+position: absolute;
+width: 100%;
+min-width: 1250px;
+top: 50px;
+}
+.barbox:hover, .subbox:hover, .barbox2:hover, .headbox:hover {
+color: red;
+}
+.subbox {
+background-image: url("ws1subbox.png");
+background-repeat: no-repeat;
+background-position: center;
+height: 210px;
+width: 710px;
+margin: auto;
+margin-top: 50px;
+text-align: center;
+color: white;
+z-index: 2;
+}
+footer {
+background-color: black;
+border-top-style: solid;
+border-top-color: white;
+border-top-width: 1px;
+margin-top: 5px;
+}
+.barbox {
+background-color: black;
+background-image: url("ws1barbox.png");
+background-position: center center;
+border-style: solid;
+border-color: white;
+border-width: 1px;
+width: 160px;
+height: 80px;
+margin-bottom: 5px;
+}
+.barbox2 {
+background-color: black;
+background-image: url("ws1barbox.png");
+background-position: center center;
+border-style: solid;
+border-color: white;
+border-width: 1px;
+width: 160px;
+height: 80px;
+margin-bottom: 5px;
+}
